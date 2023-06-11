@@ -1,0 +1,5 @@
+# Criação do projeto
+npx create-react-app organo
+
+# Execução
+npm start
