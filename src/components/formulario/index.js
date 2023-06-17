@@ -18,7 +18,7 @@ const Formulario = () => {
   const [nome, setNome] = useState('')
   const [cargo, setCargo] = useState('')
   const [imagem, setImagem] = useState('')
-  const [time, setTime] = useState('')
+  const [time, setTime] = useState(times[0])
 
   return (
     <section className='formulario'>
