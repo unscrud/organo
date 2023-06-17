@@ -4,7 +4,7 @@ import Botao from '../botao';
 import ListaSuspensa from '../listaSuspensa';
 import './formulario.css';
 
-const Formulario = () => {
+const Formulario = (props) => {
   const times = [
     'Programação', 'Front-end', 'Data Science',
     'Devops', 'UX e Design', 'Mobile', 'Inovação e Gestão'
@@ -12,7 +12,7 @@ const Formulario = () => {
 
   const aoSalvar = (evento) => {
     evento.preventDefault()
-    console.log('Dados que serão submetidos no form: ', nome, cargo, imagem, time)
+    props.aoColaboradorCadastrado({ nome, cargo, imagem, time })
   }
 
   const [nome, setNome] = useState('')
