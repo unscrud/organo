@@ -56,17 +56,15 @@ function App() {
         aoColaboradorCadastrado={colaborador => aoNovoColaboradorAdicionado(colaborador)}
         times={times.map(time => time.nome)}
       />
-      {
-        times.map(
-          time => <Time
-            key={time.nome}
-            nome={time.nome}
-            corPrimaria={time.corPrimaria}
-            corSecundaria={time.corSecundaria}
-            colaboradores={colaboradores}
-          />
-        )
-      }
+      {times.map(time => <Time
+        key={time.nome}
+        nome={time.nome}
+        corPrimaria={time.corPrimaria}
+        corSecundaria={time.corSecundaria}
+        colaboradores={colaboradores.filter(
+          colaborador => colaborador.time === time.nome
+        )}
+      />)}
     </div>
   );
 }
