@@ -6,8 +6,13 @@ import './formulario.css';
 
 const Formulario = (props) => {
   const times = [
-    'Programação', 'Front-end', 'Data Science',
-    'Devops', 'UX e Design', 'Mobile', 'Inovação e Gestão'
+    'Programação',
+    'Front-end',
+    'Data Science',
+    'Devops',
+    'UX e Design',
+    'Mobile',
+    'Inovação e Gestão'
   ]
 
   const aoSalvar = (evento) => {
