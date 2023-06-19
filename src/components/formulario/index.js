@@ -12,13 +12,13 @@ const Formulario = (props) => {
     setNome('')
     setCargo('')
     setImagem('')
-    setTime(props.times[0])
+    setTime('')
   }
 
   const [nome, setNome] = useState('')
   const [cargo, setCargo] = useState('')
   const [imagem, setImagem] = useState('')
-  const [time, setTime] = useState(props.times[0])
+  const [time, setTime] = useState('')
 
   return (
     <section className='formulario'>
@@ -48,6 +48,7 @@ const Formulario = (props) => {
         <ListaSuspensa
           valor={time}
           label='Time'
+          obrigatorio={true}
           itens={props.times}
           aoAlterado={valor => setTime(valor)}
         />
