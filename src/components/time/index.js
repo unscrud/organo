@@ -9,6 +9,7 @@ const Time = (props) => {
       <div className="colaboradores">
         {
           props.colaboradores.map((colaborador, index) => <Colaborador
+            corDeFundo={props.corPrimaria}
             nome={colaborador.nome}
             key={colaborador.nome + index}
             cargo={colaborador.cargo}
