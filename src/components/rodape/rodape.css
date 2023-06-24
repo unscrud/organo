@@ -1,0 +1,39 @@
+footer {
+  background-color: #6278f7;
+  height: 250px;
+  position: relative;
+  text-align: center;
+  background-image: url("../../../public/images/fundo.png");
+  background-size: cover;
+}
+
+footer .logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+footer .creditos {
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  transform: translate(0%, -50%);
+  font-weight: 600;
+  color: white;
+  font-size: 20px;
+}
+
+footer .redes {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .redes img {
+  width: 35px;
+}
